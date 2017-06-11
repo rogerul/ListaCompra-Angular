@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { Producto } from '../../classes/producto';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Bienenido {{name}} al curso</h1><h2>{{curso}}</h2>`,
+	moduleId: module.id,
+ 	selector: 'my-app',
+  	templateUrl: 'app.component.html'
 })
 export class AppComponent  {
-	name = 'Roger'; 
-	curso= 'Angular'
+	producto: Producto = new Producto(1, 'Patatas' , 3, 10, 'Patatas para freir');
 
 }
